@@ -1,2 +1,2 @@
 # Endervisionfanvotings
-index.html
+README.md
