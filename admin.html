@@ -1,1 +1,91 @@
 admin.html
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin - Endervision Fan Voting</title>
+    <meta name="description" content="Page d'administration sécurisée pour les résultats du vote." />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        min-height: 100vh;
+      }
+
+      .admin-wrap {
+        width: min(1100px, calc(100% - 24px));
+        margin: 0 auto;
+        padding: 36px 0 80px;
+      }
+
+      .admin-panel {
+        background: rgba(255,255,255,0.04);
+        border: 1px solid rgba(255,255,255,0.08);
+        border-radius: 22px;
+        padding: 24px;
+      }
+
+      .admin-controls {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+
+      .admin-controls input {
+        flex: 1;
+        min-width: 220px;
+        padding: 12px 14px;
+        border-radius: 12px;
+        border: 1px solid rgba(255,255,255,0.12);
+        background: rgba(255,255,255,0.02);
+        color: #fff;
+      }
+
+      .admin-controls button {
+        border: 0;
+        border-radius: 12px;
+        padding: 12px 18px;
+        font-weight: 700;
+        background: linear-gradient(135deg, #ff2f92, #9b5de5);
+        color: #fff;
+        cursor: pointer;
+      }
+
+      .status {
+        color: rgba(255,255,255,0.75);
+        margin-top: 18px;
+        min-height: 24px;
+      }
+
+      .results-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 24px;
+      }
+
+      .results-table th,
+      .results-table td {
+        text-align: left;
+        padding: 14px 10px;
+        border-bottom: 1px solid rgba(255,255,255,0.08);
+      }
+
+      .results-table th {
+        color: #ffb703;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        font-size: 0.72rem;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      .logout-link {
+        display: inline-block;
+        margin-top: 18px;
+        color: rgba(255,255,255,0.8);
+        text-decoration: none;
+      }
+    </style>
