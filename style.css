@@ -85,10 +85,21 @@ button {
 }
 
 .gradient-text {
-  background: linear-gradient(90deg, #ff2f92 0%, #9b5de5 50%, #00d9ff 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  body {
+  background: #000000;
+  color: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #000000;
+  color: #ffffff;
+};
 }
 
 .subtitle {
