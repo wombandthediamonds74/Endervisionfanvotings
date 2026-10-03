@@ -298,3 +298,37 @@ html, body {
     padding-top: 36px;
   }
 }
+.brand {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.brand-name {
+  font-family: "Didot", "Bodoni MT", "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: clamp(1.1rem, 2vw, 2.2rem);
+  letter-spacing: 0.08em;
+  color: #00ff00;
+  text-transform: uppercase;
+}
+
+.brand-heart {
+  display: inline-block;
+  font-size: 1.1em;
+  line-height: 1;
+  margin: 0 0.08em;
+  transform: translateY(-0.02em);
+  color: #ff4d6d;
+}
+
+.brand-small {
+  font-family: "Didot", "Bodoni MT", "Times New Roman", serif;
+  font-style: italic;
+  font-size: 0.9rem;
+  letter-spacing: 0.18em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
